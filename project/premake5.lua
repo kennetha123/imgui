@@ -1,9 +1,11 @@
 project "ImGui"
-  kind "StaticLib"
-  language "C++"
-  
-  targetdir ("bin/" .. outputDir .. "/%{prj.name}")
-  objdir ("obj/" ..outputDir .. "/%{prj.name}")
+	location ""
+	kind "StaticLib"
+	language "C++"
+	staticruntime "on"
+
+	targetdir ("project/bin" .. outputName)
+	objdir ("project/obj" .. outputName)
   
   files
   {
