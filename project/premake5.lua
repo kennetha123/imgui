@@ -4,8 +4,8 @@ project "ImGui"
 	language "C++"
 	staticruntime "on"
 
-	targetdir ("project/bin" .. outputName)
-	objdir ("project/obj" .. outputName)
+	targetdir ("bin" .. outputName)
+	objdir ("obj" .. outputName)
   
   files
   {
